@@ -1,17 +1,24 @@
+/*  Purpose: Print the names in reverse order
+ *
+ *  @author  Ravi Maurya
+ *  @version 1.0
+ *  @since   06-08-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.functional;
 import java.util.Scanner;
 public class PrintThreeNames {
 public static void main(String[] args) {
 	
-	Scanner sc=new Scanner(System.in);
+	Scanner scanner=new Scanner(System.in);
 	System.out.println("java Print Three Names");
-	String str=sc.nextLine();
-	String s[]=new String[5];
-			s=str.split(" ");
+	String string=scanner.nextLine();
+	String string2[]=new String[5];
+			s=string.split(" ");
 	System.out.print("Hi"+" ");
-	for(int i=s.length-1;i>=0; i--)
+	for(int i=string2.length-1;i>=0; i--)
 	{
-		System.out.print(s[i]+","+" ");
+		System.out.print(string2[i]+","+" ");
 	} 
   }
 }
