@@ -1,3 +1,10 @@
+/*  Purpose: To Determines the root of Quadratic Equation
+ *
+ *  @author  Ravi Maurya
+ *  @version 1.0
+ *  @since   06-08-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.functional;
 import java.util.Scanner;
 public class Quadratic {
