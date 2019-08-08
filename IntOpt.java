@@ -1,4 +1,4 @@
-/*  Purpose: get to know whether the given month and date is in spring season or not
+/*  Purpose: Result of the given operations in Integer as a input
  *
  *  @author  Ravi Maurya
  *  @version 1.0
