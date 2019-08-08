@@ -1,3 +1,10 @@
+/*  Purpose: Result of the given operations in double as a input
+ *
+ *  @author  Ravi Maurya
+ *  @version 1.0
+ *  @since   08-08-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.functional;
 
 import java.util.Scanner;
