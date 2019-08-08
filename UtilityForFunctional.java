@@ -64,5 +64,30 @@ public class Utility
 			return false;
 				
 		}
+
+	}
+	
+	
+		/**
+	 * @param 		int		a
+	 * @param 		int		b
+	 * @param 		int		c
+	 * @return		int		operation
+	 */
+	public int integerOperation1(int a,int b, int c)
+	{
+		int operation=a+(b*c);
+		return operation;
+	}
+	public int integerOperation2(int a,int b, int c)
+	{
+		int operation=(a*b)+c;
+		return operation;
+	}
+	public int integerOperation3(int a,int b, int c)
+	{
+		int operation=(a%b)+c;
+		return operation;
 	}
 }
+
