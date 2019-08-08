@@ -68,7 +68,7 @@ public class Utility
 	}
 	
 	
-		/**
+	/**
 	 * @param 		int		a
 	 * @param 		int		b
 	 * @param 		int		c
@@ -87,6 +87,29 @@ public class Utility
 	public int integerOperation3(int a,int b, int c)
 	{
 		int operation=(a%b)+c;
+		return operation;
+	}
+	
+	
+	/**
+	 * @param 		double	a
+	 * @param 		double	b
+	 * @param 		double	c
+	 * @return		double	operation
+	 */
+	public double doubleOperation1(double a,double b, double c)
+	{
+		double operation=a+(b*c);
+		return operation;
+	}
+	public double doubleOperation2(double a,double b, double c)
+	{
+		double operation=(a*b)+c;
+		return operation;
+	}
+	public double doubleOperation3(double a,double b, double c)
+	{
+		double operation=(a%b)+c;
 		return operation;
 	}
 }
