@@ -138,6 +138,36 @@ public int varifyNum(int number)
 	}
 	return number;
 }
+	
+	
+	/*	******************************************************************************
+  	Purpose: Prints five uniform random values between 0 and 1,
+	their average value, and their minimum and maximum value. Use Math.random(),
+	Math.min(), and Math.max().
+
+ * @return		double (s
+ * sum/5=Average)
+ */
+public double generateRandomNumber()
+{
+	double MinNum = 1,MaxNum = 0,sum=0;
+	double number[]=new double[5];
+	for(int i=0;i<5;i++)
+	{
+		number[i]=(Math.random()*1);
+		System.out.println("random generated number is "+number[i]);
+		sum=sum+number[i];
+		MinNum=Math.min(MinNum, number[i]);
+		
+		MaxNum=Math.max(MaxNum, number[i]);
+	
+	}
+	System.out.println("Sum of Random no is: "+sum);
+	System.out.println("Minimum no is: "+MinNum);
+	System.out.println("Maximum no is: "+MaxNum);
+	return (sum/5);
+	
 }
 }
+
 
