@@ -112,5 +112,32 @@ public class Utility
 		double operation=(a%b)+c;
 		return operation;
 	}
+
+	
+	 /* Purpose: get to know whether the Number is HappyNumber or not.
+ **
+ * @param   	int		number
+ * @return	int		number
+ */
+public int varifyNum(int number)
+{
+	int secondDigit,lastDigit,firstDigit;
+	while(number!=1 && number!=4)
+	{
+		secondDigit=0;
+		lastDigit=number%10;
+		firstDigit=number/10;
+		if(firstDigit>=10)
+		{
+			secondDigit=firstDigit%10;
+			firstDigit=firstDigit/10;
+		}
+		
+		number=((firstDigit*firstDigit)+(secondDigit*secondDigit)+(lastDigit*lastDigit));
+		
+	}
+	return number;
+}
+}
 }
 
