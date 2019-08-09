@@ -1,33 +1,31 @@
+/*  Purpose: get to know whether the Number is HappyNumber or not.
+ *
+ *  @author  Ravi Maurya
+ *  @version 1.0
+ *  @since   09-08-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.functional;
 import java.util.*;
-public class HappyNumber {
+import com.utility.*;
+public class HappyNumber 
+{
 
-	public static void main(String[] args) 
-	{
-		int secondDigit=0,number,lastDigit,firstDigit;
-		Scanner scanner=new Scanner(System.in);
-		System.out.println("Enter a number");
-		number=scanner.nextInt();
-		int originalNum=number;
-		while(number!=1 && number!=4 && number!=25 && number!=145)
-		{
-			
-			lastDigit=number%10;
-			firstDigit=number/10;
-			if(firstDigit>=10)
+			public static void main(String[] args) 
 			{
-				secondDigit=firstDigit%10;
-				firstDigit=firstDigit/10;
+				int number;
+				Scanner scanner=new Scanner(System.in);
+				System.out.println("Enter a number");
+				number=scanner.nextInt();
+				int originalNum=number;
+				Utility utility=new Utility();
+				int varifiedNum=utility.varifyNum(number);
+				
+				if(varifiedNum==1)
+					System.out.println(originalNum+" is Happy Number");
+				else
+					System.out.println(originalNum+" is not Happy Number");
+					scanner.close();
 			}
-			
-			number=((firstDigit*firstDigit)+(secondDigit*secondDigit)+(lastDigit*lastDigit));
-			
-		}
-		if(number==1)
-			System.out.println(originalNum+" is Happy Number");
-		else
-			System.out.println(originalNum+" is not Happy Number");
-			scanner.close();
-	}
 
 }
