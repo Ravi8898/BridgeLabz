@@ -1,3 +1,10 @@
+/*  Purpose: Find whether no is Armstrong number is not
+ *
+ *  @author  Ravi Maurya
+ *  @version 1.0
+ *  @since   10-08-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.functional;
 import java.util.*;
 public class ArmstrongNumber {
