@@ -168,6 +168,39 @@ public double generateRandomNumber()
 	return (sum/5);
 	
 }
+	
+	public boolean checkAnagram(String str1,String str2)
+	{	
+		str1=str1.replace(" ", "");
+		str2=str2.replace(" ", "");
+		str1=str1.toLowerCase();
+		str2=str2.toLowerCase();
+		int character[]=new int[26];
+		if(str1.length()==str2.length()) {
+		for(int i=0;i<str1.length();i++) {
+			
+			character[str1.charAt(i)-97]++;
+		}
+		for(int j=0;j<str2.length();j++) {
+			
+			character[str2.charAt(j)-97]--;
+		}
+		
+		boolean flagTake=true;
+		for(int i=0; i<character.length;i++) {
+			
+			if(character[i]!=0)
+		{
+				flagTake=false;
+				break;
+				}
+		}
+		return flagTake;
+	}
+		else
+			return false;
+	
+}
 }
 
 
