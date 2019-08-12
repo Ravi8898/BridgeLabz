@@ -10,7 +10,7 @@
 package com.bridgelabz.functional;
 
 import java.util.Scanner;
-
+import com.utility.*;
 public class AnagramNew {
 
 	public static void main(String[] args) {
